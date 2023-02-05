@@ -1,2 +1,2 @@
-# Nostr-Damus-Amethyst-Bot
+# Nostr-Bot
 Simple Nostr bot that auto reply to certain keyword.
