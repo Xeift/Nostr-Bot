@@ -41,9 +41,7 @@ relay_manager = RelayManager()
 relay_manager.add_relay('wss://relay.snort.social')  # add relay
 
 relay_manager.add_subscription(subscription_id, filters)
-relay_manager.open_connections(
-    {'cert_reqs':
-     ssl.CERT_NONE})  # NOTE: This disables ssl certificate verification
+relay_manager.open_connections({'cert_reqs': ssl.CERT_NONE})  # NOTE: This disables ssl certificate verification
 time.sleep(1.25)  # allow the connections to open
 
 message = json.dumps(request)
@@ -55,7 +53,7 @@ while 1:
         event_msg = relay_manager.message_pool.get_event()
 
         if is_spam_post(event_msg.event.content) == False:
-            if '//help' in event_msg.event.content: # help command
+            if event_msg.event.content == '//help': # help command
                 print(event_msg.event.content)
                 print(event_msg.event.id)
                 private_key = PrivateKey.from_nsec(
@@ -71,7 +69,7 @@ while 1:
                 relay_manager.publish_event(event)
                 time.sleep(1)# allow the messages to send
 
-            if '//gas' in event_msg.event.content: # help command
+            if event_msg.event.content == '//gas': # help command
                 url = 'https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey='
                 r = requests.get(url).json()['result']
    
