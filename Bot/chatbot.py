@@ -5,9 +5,11 @@ there are 2 commands in this script, `//help` and `//gas`
 `//help` will return a simple help message,
 `//gas` will return ethereum gas.
 '''
-import json
+import os
 import ssl
+import json
 import time
+import requests
 from nostr.filter import Filter, Filters
 from nostr.event import EventKind, Event
 from nostr.relay_manager import RelayManager
@@ -70,7 +72,6 @@ while 1:
                 time.sleep(1)# allow the messages to send
 
             if '//gas' in event_msg.event.content: # help command
-                import requests
                 url = 'https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey='
                 r = requests.get(url).json()['result']
    
