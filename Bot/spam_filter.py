@@ -1,3 +1,4 @@
+'''the main purpose of this function is to filter spam post'''
 def is_spam_post(post_content):
     spam_keyword = [
         'Make sure you sub to my channel bras',

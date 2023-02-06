@@ -1,21 +1,14 @@
 '''
-this script is the combination of `fetch_event.py` and `reply_event.py`,
-it will reply every new post which contain specific keyword.
-there are 2 commands in this script, `//help` and `//gas`
-`//help` will return a simple help message,
-`//gas` will return ethereum gas.
+this script will reply every new post which contain specific keyword or execute command
 '''
-import os
 import ssl
 import json
 import time
-import requests
 
 from nostr.filter import Filter, Filters
-from nostr.event import EventKind, Event
+from nostr.event import EventKind
 from nostr.relay_manager import RelayManager
 from nostr.message_type import ClientMessageType
-from nostr.key import PrivateKey
 
 from spam_filter import is_spam_post
 from commands import execute_cmds

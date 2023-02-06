@@ -1,3 +1,8 @@
+'''
+bot will execute the command if post exactly match it
+`//help` will return a simple help message,
+`//gas` will return ethereum gas.
+'''
 import os
 import time
 import requests

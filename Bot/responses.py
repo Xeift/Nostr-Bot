@@ -1,3 +1,4 @@
+'''bot will respond to post which contain keyword in NORMAL_RESPONSE_DATA'''
 import os
 import time
 
