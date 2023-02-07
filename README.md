@@ -20,17 +20,17 @@ try it on [Replit](https://replit.com/@xeiftc/nostr-bot-demo-public)😎
 
 ## FAQ
 
-**How to add a relay?**
+### How to add a relay?
 
-Add custom relay [here](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/main.py#L32)
+Add custom relay [here](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/main.py#L32).
 
-**Where to add new commands?**
+### Where to add new commands?
 
-Add your commands and code in [commands.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py)
+Add your commands and code in [commands.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py).
 
-**Where to add new responses?**
+### Where to add new responses?
 
-Add your responses and code in [responses.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py)
+Add your responses and code in [responses.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py).
 
 ## NOTE
 
