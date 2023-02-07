@@ -1,5 +1,14 @@
 # Nostr-Bot
-Simple Nostr bot that auto reply to certain keyword.
+Simple Nostr bot that auto reply to certain keyword and execute commands.
+
+## Introduction
+This is a Nostr bot that auto reply to certain keyword and execute commands.
+
+There are 2 commands in this bot currently,
+
+`//help` Display help message.
+
+`//gas` Query Ethereum gas. 
 
 ## Requirements
 
@@ -7,4 +16,18 @@ Simple Nostr bot that auto reply to certain keyword.
 
 ## Quickstart
 
-try it on [Replit](https://replit.com/@xeiftc/nostr-bot-demo-public)!
+try it on [Replit](https://replit.com/@xeiftc/nostr-bot-demo-public)😎
+
+## FAQ
+
+How to add a relay?
+
+Add custom relay [here](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/main.py#L32)
+
+Where to add new commands?
+
+Add your commands and code in [commands.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py)
+
+*Where to add new responses?*
+
+Add your responses and code in [responses.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py)
