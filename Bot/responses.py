@@ -10,7 +10,8 @@ NOSTR_PUBLICE_KEY = NOSTR_PRIVATE_KEY.public_key.hex()
 AUTHOR_INFO = '\nbot by xeift.eth\nhttps://github.com/Xeift/Nostr-Bot'
 NORMAL_RESPONSE_DATA = {
     "GM": "Good Morning!\nhttps://www.vobss.com/wp-content/uploads/2021/12/good-morning-anime-meme-vobss-9.jpg",
-    "Hello": "Hello!\nhttps://media.tenor.com/3g3D1mECft0AAAAC/anime-hi.gif"
+    "Hello": "Hello!\nhttps://media.tenor.com/3g3D1mECft0AAAAC/anime-hi.gif",
+    "GN": "Good Night! Have a good dream\nhttps://pbs.twimg.com/media/EPMSrKIWsAE3PdD.jpg"
 }
 
 '''----------------------------------------FUNCTIONS----------------------------------------'''
