@@ -11,6 +11,7 @@ replit = "^3.2.4"
 Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 schedule = "^1.1.0"
+nostr = "^0.0.2"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
