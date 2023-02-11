@@ -32,8 +32,12 @@ try it on [Replit](https://replit.com/@xeiftc/nostr-bot-demo-public)😎
 
 > Add your responses and code in [responses.py](https://github.com/Xeift/Nostr-Bot/blob/main/Bot/commands.py).
 
-## NOTE
+## Note
 
 Feel free to create an issue if you have any problem.
 
 This is a demo bot and may not update frequently.
+
+## License
+
+MIT
