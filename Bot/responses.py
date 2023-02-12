@@ -16,7 +16,7 @@ NORMAL_RESPONSE_DATA = {
 
 '''----------------------------------------FUNCTIONS----------------------------------------'''
 def execute_resp(event_msg, relay_manager):
-    if event_msg.event.public_key == NOSTR_PUBLICE_KEY: return False # do not reply to messages sent by ourself
+    if event_msg.event.public_key == NOSTR_PUBLICE_KEY or event_msg.event.public_key == 'ee8bf9594fbf8a3ed277b9fb60da8d963f7fd2f889315163761c90e91ca71277': return False # do not reply to messages sent by ourself
     for keyword in NORMAL_RESPONSE_DATA:
         if keyword in event_msg.event.content: normal_response(event_msg, relay_manager, NORMAL_RESPONSE_DATA[keyword])
 
